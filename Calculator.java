@@ -25,9 +25,7 @@ public class Calculator {
             multiX = 1;
             Stack<Integer> stack = new Stack<>();
             int end = 0;
-            while(s.charAt(end) != ' ') {
-                end++;
-            }
+            while(s.charAt(end) != ' ') end++;
             for(int i = s.length() - 1; i >= end; i--) {
                 Character c = s.charAt(i);
                 if(c.equals(' ')) continue;
@@ -52,7 +50,6 @@ public class Calculator {
                         } else if(c.equals('*')) {
                             stack.push(first*second);
                         }
-
                     }
                 } else {
                     if(c.equals('X')) {
