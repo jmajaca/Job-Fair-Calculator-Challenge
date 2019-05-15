@@ -5,10 +5,10 @@ import static java.lang.Math.pow;
 /**
  * Solution of Calculator Challenge
  * @author Josip Majača
- * Problem was solved using stack. If input was a number it would be pushed on stack, on the other hand if input was a +/-/* it would pop two numbers from stack and
- * performed operation +/-/*. If input was a 'X' then null would be stored on stack. If operation was ment to be performed on 'X' (null on stack) it would
- * add/substract sumX and multiply multiX, after that as result on stack would be pushed null. On the end number Y (from the task) and sumX are subtracted and then
- * devided by multiX giving solution X.
+ * Problem was solved using stack. If input was a number it would be pushed on stack, on the other hand if input was a +/-/* it 
+ * would pop two numbers from stack and performed operation +/-/*. If input was a 'X' then null would be stored on stack. If operation 
+ * was ment to be performed on 'X' (null on stack) it would add/substract sumX and multiply multiX, after that as result on stack would 
+ * be pushed null. On the end number Y (from the task) and sumX are subtracted and then devided by multiX giving solution X.
  */
 public class Calculator {
 
