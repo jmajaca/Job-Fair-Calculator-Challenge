@@ -17,7 +17,6 @@ public class Calculator {
     private static int multiX;
 
     public static void main(String[] args) throws IOException {
-        LinkedList<String> results = new LinkedList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String line;
         while ((line = reader.readLine()) != null && !(line.isEmpty())) input.add(line);
@@ -67,14 +66,10 @@ public class Calculator {
             result -= sumX;
             result /= multiX;
             if(result % 1 == 0) {
-                results.add(String.valueOf((int) result));
-            } else {
-                results.add("Err");
-            }
-
-        }
-        for(String s : results) {
-            System.out.printf(s + " ");
+                 System.out.printf((int)result + " ");
+             } else {
+                 System.out.printf("Err ");
+             }
         }
     }
     /**
