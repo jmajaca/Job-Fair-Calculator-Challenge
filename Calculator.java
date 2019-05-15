@@ -33,10 +33,8 @@ public class Calculator {
                 Character c = s.charAt(i);
                 if(c.equals(' ')) continue;
                 if(c.equals('+') || c.equals('-') || c.equals('*')) {
-                    Integer first = stack.peek();
-                    stack.pop();
-                    Integer second = stack.peek();
-                    stack.pop();
+                    Integer first = stack.pop();
+                    Integer second = stack.pop();
                     if (first == null) {
                         foundX(second, c);
                         stack.push(null);
